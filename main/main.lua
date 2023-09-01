@@ -1,0 +1,1 @@
+-- local func = require("func")
