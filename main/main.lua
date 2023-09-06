@@ -17,7 +17,13 @@ function love.keypressed(key)
         input = input:sub(1, -2)
     end
 end
-
+function love.keyboard.isDown(key)
+    if key == "backspace" then
+        input= ""
+        return true
+    end
+    
+end
 function calculate(expression)
     -- Safely evaluate the expression using loadstring
     local func, err = loadstring("return " .. expression)

@@ -1,5 +1,4 @@
 local button = {}
-
 function button.new(text, colour,  width, height, radius)
 local key = {}
         key.innerText = text
